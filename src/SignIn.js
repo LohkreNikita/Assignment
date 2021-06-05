@@ -30,16 +30,15 @@ export default function SignIn(props) {
   }, []);
 
   const onSubmit = (data) => {
-    console.log("signIn ==>", data);
     props.history.push("/welcome");
   };
 
   return (
-    <div className='form'>
+    <div className='container'>
       <Avatar className='form__avtar'>
         <LockOutlinedIcon />
       </Avatar>
-      <h1>SignIN</h1>
+      <h1 className='hedaerText'>SignIN</h1>
       <form
         className='form__body'
         noValidate

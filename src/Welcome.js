@@ -11,7 +11,6 @@ export default function Welcome() {
   useEffect(() => {
     const SignUpData = localStorage.getItem("myData");
     const data = JSON.parse(SignUpData);
-    console.log("SignUpData ==>", data?.email);
     setValidData({
       fname: data?.firstName,
       lname: data?.lastName,

@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import Grid from "@material-ui/core/Grid";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Avatar from "@material-ui/core/Avatar";
+import Paper from "@material-ui/core/Paper";
 import "./formStyle.css";
 
 export default function SIgnUp(props) {
@@ -16,17 +17,16 @@ export default function SIgnUp(props) {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log("data ==>", data);
     localStorage.setItem("myData", JSON.stringify(data));
     props.history.push("/signIn");
   };
 
   return (
-    <div className='form'>
+    <div className='container'>
       <Avatar className='form__avtar'>
         <LockOutlinedIcon />
       </Avatar>
-      <h1>SignUp</h1>
+      <h1 className='hedaerText'>SignUp</h1>
       <form
         className='form__body'
         noValidate

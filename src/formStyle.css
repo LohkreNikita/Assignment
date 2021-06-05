@@ -1,4 +1,4 @@
-.form {
+.container {
   height: 100vh;
   text-align: center;
   display: flex;
@@ -10,6 +10,7 @@
 }
 
 .form__avtar {
+  align-self: center !important;
   background-image: linear-gradient(
     to right bottom,
     rgba(126, 213, 111, 0.801),
@@ -17,7 +18,7 @@
   );
 }
 
-.form > h1 {
+.hedaerText {
   margin-top: 20px;
   text-transform: capitalize;
   font-weight: 400;
@@ -32,10 +33,10 @@
 }
 
 .form__input {
-  width: 40%;
+  width: 30%;
 }
 
 .form__button {
   margin-top: 30px !important;
-  width: 40%;
+  width: 30%;
 }
